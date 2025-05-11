@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+			<div id= "header">
+				<ul class= "nav">
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/index2.html"> INICIO </a>
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/quienes-somos.html"> QUIENES SOMOS </a></li>
+					<li> <a href=""> SERVICIOS </a>
+					<ul>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/Chatarra.html">Antojitos</a></li>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/lacteos.html">Despensa</a></li>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/cuidado-personal.html">Cuidado Personal y limpieza del hogar</a></li>
+					</ul>
+					</li>
+						
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/nino.html"> EVENTOS </a></div>
+			<div class="redes">
+			<ul>
+				<li><a href="https://youtube.com/@tiendaslupita?si=Wnn6bCshC2aG_xqm" target="_blank" class="icon-youtube1"></a></li>
+				<li><a href="https://wa.me/7713347207" target="_blank" class="icon-whatsapp"></a></li>
+				<li><a href="https://www.facebook.com/share/18mBWkrQ83/" target="_blank" class="icon-facebook1"></a></li>
+				<li><a href="https://www.instagram.com/tiendas_lupita123" target="_blank" class="icon-instagram1"></a></li>
+			</ul>
+			</div>
+			<div class="logo1">
+				<img src="logo.png">
+			</div>
+			<div class="reel-container">
+				<div class="reel">
+					<img src="imagen45.png" alt="Imagen 1">
+					<img src="imagen63.png" alt="Imagen 2">
+				</div>
+			</div>
+	 <script>
+        const reelContainer = document.querySelector('.reel-container');
+        const reel = document.querySelector('.reel');
+        const images = document.querySelectorAll('.reel img');
+        let counter = 0;
+        const imageWidth = images[0].offsetWidth; // Ancho de una imagen
+
+        function scrollReel() {
+            counter++;
+            if (counter >= images.length) {
+                counter = 0;
+            }
+            reel.style.transform = `translateX(-${counter * imageWidth}px)`;
+        }
+
+        setInterval(scrollReel, 2000); // Cambia de imagen cada 3 segundos
+    </script>
+	<div class="texto28">SURTE TU DESPENSA EN ABARROTES LUPITA</div>
+	<div class="texto33">En Abarrotes Lupita encontrarás todo lo esencial para el día a día. Desde productos básicos como arroz, frijol,
+	azúcar, sal, aceite y pastas, hasta enlatados, harinas, papel higiénico, productos de limpieza y mucho más. Sabemos lo importante que
+	es tener una despensa completa y bien surtida, por eso nos esforzamos por ofrecerte calidad, variedad y los mejores precios.</div>
+	    <article class="caja16">
+				<img src="imagen47.jpg">
+				<div class="texto29">¡Suma a tu día lo esencial, sin gastar de más!<div>
+		</article>
+		<article class="caja17">
+				<img src="imagen48.jpg">
+				<div class="texto30">Lo básico nunca fue tan fácil de encontrar.<div>
+		</article>
+		<article class="caja18">
+				<img src="imagen49.jpg">
+				<div class="texto31">Tu despensa, siempre llena, siempre lista.<div>
+		</article>
+		<article class="caja19">
+				<img src="imagen50.jpg">
+				<div class="texto32">Ahorra con cada compra, vive con tranquilidad.<div>
+		</article>
+		<div class="texto34">En oferta</div>
+		<article class="caja20">
+				<img src="imagen57.png">
+				<div class="texto35">Spaghetti<br>$10.00<div>
+		</article>
+		<article class="caja21">
+				<img src="imagen58.png">
+				<div class="texto36">Aceite<br>$28.50<div>
+		</article>
+		<article class="caja22">
+				<img src="imagen59.png">
+				<div class="texto37">Harina <br>$9.50<div>
+		</article>
+		<article class="caja23">
+				<img src="imagen60.png">
+				<div class="texto38">Arroz <br>$22.00<div>
+		</article>
+		<article class="caja24">
+				<img src="imagen61.png">
+				<div class="texto39">Galletas <br>$10.00<div>
+		</article>
+		<article class="caja25">
+				<img src="imagen62.png">
+				<div class="texto40">Sopa <br>$12.00<div>
+		</article>
+	<div class="pie1">CONOCENOS<br>Localidad de La Esperanza Municipio Tianguistengo<br>Tel:7713347207<br>
+			Autoras:Alejandra Alarcón Tolentino, Wendy Alvarez Alarcón
+			</div>
+	</body>
+</html>

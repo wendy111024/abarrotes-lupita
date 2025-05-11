@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+			<div id= "header">
+				<ul class= "nav">
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/index2.html"> INICIO </a>
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/quienes-somos.html"> QUIENES SOMOS </a></li>
+					<li> <a href=""> SERVICIOS </a>
+					<ul>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/Chatarra.html">Antojitos</a></li>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/lacteos.html">Despensa</a></li>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/cuidado-personal.html">Cuidado Personal y limpieza del hogar</a></li>
+					</ul>
+					</li>
+						
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/nino.html"> EVENTOS </a></li>	
+			</div>
+			<div class="redes">
+			<ul>
+				<li><a href="https://youtube.com/@tiendaslupita?si=Wnn6bCshC2aG_xqm" target="_blank" class="icon-youtube1"></a></li>
+				<li><a href="https://wa.me/7713347207" target="_blank" class="icon-whatsapp"></a></li>
+				<li><a href="https://www.facebook.com/share/18mBWkrQ83/" target="_blank" class="icon-facebook1"></a></li>
+				<li><a href="https://www.instagram.com/tiendas_lupita123" target="_blank" class="icon-instagram1"></a></li>
+			</ul>
+			</div>
+			<div class="logo1">
+				<img src="logo.png">
+			</div>
+				 <div class="reel-container">
+        <div class="reel">
+            <img src="imagen64.png" alt="Imagen 1">
+            <img src="imagen46.png" alt="Imagen 2">
+        </div>
+    </div>
+	 <script>
+        const reelContainer = document.querySelector('.reel-container');
+        const reel = document.querySelector('.reel');
+        const images = document.querySelectorAll('.reel img');
+        let counter = 0;
+        const imageWidth = images[0].offsetWidth; // Ancho de una imagen
+
+        function scrollReel() {
+            counter++;
+            if (counter >= images.length) {
+                counter = 0;
+            }
+            reel.style.transform = `translateX(-${counter * imageWidth}px)`;
+        }
+
+        setInterval(scrollReel, 2000); // Cambia de imagen cada 3 segundos
+    </script>
+	<div class="texto41">Todo lo que necesitas para mantener tu hogar limpio y tu bienestar diario al alcance 
+	de tu mano.</div>
+	<div class="texto42">En nuestra tienda encontrarás una amplia variedad de productos pensados para ti y tu 
+	familia. Desde artículos esenciales para la limpieza del hogar como detergentes, desinfectantes, cloro, 
+	limpiadores multiusos y escobas, hasta productos de cuidado personal como jabones, shampoo, papel higiénico,
+	pasta dental, toallas femeninas y desodorantes.</div>
+	<div class="imagen65">
+		<img src="imagen65.jpg">
+	</div>
+	<div class="texto43">Sabemos que un hogar limpio y una buena higiene personal son clave para el bienestar 
+	diario, por eso te ofrecemos marcas de confianza, precios accesibles y un surtido constante para que no te 
+	falte nada.</div>
+	<div class="imagen66">
+		<img src="imagen66.jpg">
+	</div>
+	<div class="texto44">Cuida tu casa y tu salud, empieza por lo básico. ¡Todo lo encuentras aquí!</div>
+	<div class="texto53">Conoce nuestros productos</div>
+	<article class="caja33">
+				<img src="imagen67.png">
+				<div class="texto45">Desodorante<br>$15.00<div>
+		</article>
+		<article class="caja26">
+				<img src="imagen68.png">
+				<div class="texto46">Té<br>$28.50<div>
+		</article>
+		<article class="caja27">
+				<img src="imagen69.png">
+				<div class="texto47">Desodorante <br>$79.00<div>
+		</article>
+		<article class="caja28">
+				<img src="imagen70.png">
+				<div class="texto48">Vaporu <br>$42.00<div>
+		</article>
+		<article class="caja29">
+				<img src="imagen71.png">
+				<div class="texto49">Crema <br>$15.00<div>
+		</article>
+		<article class="caja30">
+				<img src="imagen72.png">
+				<div class="texto50">Shampoo <br>$49.00<div>
+		</article>
+		<article class="caja31">
+				<img src="imagen73.png">
+				<div class="texto51">Crema para pies <br>$50.00<div>
+		</article>
+		<article class="caja32">
+				<img src="imagen74.png">
+				<div class="texto52">Protector solar <br>$30.00<div>
+		</article>
+	<div class="pie1">CONOCENOS<br>Localidad de La Esperanza Municipio Tianguistengo<br>Tel:7713347207<br>
+			Autoras:Alejandra Alarcón Tolentino, Wendy Alvarez Alarcón
+			</div>
+	</body>
+</html>

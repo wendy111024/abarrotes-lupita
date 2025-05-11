@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+			<div id= "header">
+				<ul class= "nav">
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/index2.html"> INICIO </a>
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/quienes-somos.html"> QUIENES SOMOS </a></li>
+					<li> <a href=""> SERVICIOS </a>
+					<ul>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/Chatarra.html">Antojitos</a></li>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/lacteos.html">Despensa</a></li>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/cuidado-personal.html">Cuidado Personal y limpieza del hogar</a></li>
+					</ul>
+					</li>
+						
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/nino.html"> EVENTOS </a></li>	
+			</div>
+			<div class="redes">
+			<ul>
+				<li><a href="https://youtube.com/@tiendaslupita?si=Wnn6bCshC2aG_xqm" target="_blank" class="icon-youtube1"></a></li>
+				<li><a href="https://wa.me/7713347207" target="_blank" class="icon-whatsapp"></a></li>
+				<li><a href="https://www.facebook.com/share/18mBWkrQ83/" target="_blank" class="icon-facebook1"></a></li>
+				<li><a href="https://www.instagram.com/tiendas_lupita123" target="_blank" class="icon-instagram1"></a></li>
+			</ul>
+			</div>
+			<div class="logo1">
+				<img src="logo.png">
+			</div>
+			 <div class="reel-container">
+        <div class="reel">
+            <img src="imagen30.png" alt="Imagen 1">
+            <img src="imagen31.png" alt="Imagen 2">
+        </div>
+    </div>
+	 <script>
+        const reelContainer = document.querySelector('.reel-container');
+        const reel = document.querySelector('.reel');
+        const images = document.querySelectorAll('.reel img');
+        let counter = 0;
+        const imageWidth = images[0].offsetWidth; // Ancho de una imagen
+
+        function scrollReel() {
+            counter++;
+            if (counter >= images.length) {
+                counter = 0;
+            }
+            reel.style.transform = `translateX(-${counter * imageWidth}px)`;
+        }
+
+        setInterval(scrollReel, 2000); // Cambia de imagen cada 3 segundos
+    </script>
+	<div class="texto15">Conoce nuestros increibles productos</div>
+		<article class="caja5">
+				<img src="imagen32.jpg">
+				<div class="texto16">Concientete con un delicioso Ramen de tu marca preferida.<div>
+		</article>
+		<article class="caja6">
+				<img src="imagen33.jpg">
+				<div class="texto17">Todo a excelentes precios y de increible calidad a tu alcance.<div>
+		</article>
+		<article class="caja7">
+				<img src="imagen34.jpg">
+				<div class="texto18">Ven y disfruta de tus galletas favoritas. No te los pierdas en tu tiendita favorita<div>
+		</article>
+		<article class="caja8">
+				<img src="imagen35.jpg">
+				<div class="texto19">Prueba y disfruta junto a tu familia y amigos un rico y delicioso jugo.<div>
+		</article>
+		<article class="caja9">
+				<img src="imagen36.jpg">
+				<div class="texto20">Refrescate con tu refresco favorito a la temperatura que desees .<div>
+		</article>
+		<article class="caja10">
+				<img src="imagen37.jpg">
+				<div class="texto21">¿Quieres algo dulce? Conoce nuestro nuevo producto que seguro te endulsara el dia.<div>
+		</article>
+		<div class="texto22"> ¡Aprovecha las ofertas que vuelan! Solo por tiempo limitado!</div>
+		<article class="caja11">
+				<img src="imagen39.png">
+				<div class="texto23">Sabritas<br>$17.00<div>
+		</article>
+		<article class="caja12">
+				<img src="imagen40.png">
+				<div class="texto24">Refrescos <br>$20.00<div>
+		</article>
+		<article class="caja13">
+				<img src="imagen41.png">
+				<div class="texto25">Saborizante <br>$7.00<div>
+		</article>
+		<article class="caja14">
+				<img src="imagen42.png">
+				<div class="texto26">Gelatinas <br>$10.00<div>
+		</article>
+		<article class="caja15">
+				<img src="imagen43.png">
+				<div class="texto27">Takis <br>$18.00<div>
+		</article>
+			<div class="pie1">CONOCENOS<br>Localidad de La Esperanza Municipio Tianguistengo<br>Tel:7713347207<br>
+			Autoras:Alejandra Alarcón Tolentino, Wendy Alvarez Alarcón
+			</div>
+	</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+			<div id= "header">
+				<ul class= "nav">
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/index2.html"> INICIO </a>
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/quienes-somos.html"> QUIENES SOMOS </a></li>
+					<li> <a href=""> SERVICIOS </a>
+					<ul>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/Chatarra.html">Antojitos</a></li>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/lacteos.html">Despensa</a></li>
+						<li><a href="file:///C:/Users/aleja/Desktop/examen/cuidado-personal.html">Cuidado Personal y limpieza del hogar</a></li>
+					</ul>
+					</li>
+						
+					<li> <a href="file:///C:/Users/aleja/Desktop/examen/nino.html"> EVENTOS </a></li>	
+			</div>
+			<div class="redes">
+			<ul>
+				<li><a href="https://youtube.com/@tiendaslupita?si=Wnn6bCshC2aG_xqm" target="_blank" class="icon-youtube1"></a></li>
+				<li><a href="https://wa.me/7713347207" target="_blank" class="icon-whatsapp"></a></li>
+				<li><a href="https://www.facebook.com/share/18mBWkrQ83/" target="_blank" class="icon-facebook1"></a></li>
+				<li><a href="https://www.instagram.com/tiendas_lupita123" target="_blank" class="icon-instagram1"></a></li>
+			</ul>
+			</div>
+			<div class="logo1">
+				<img src="logo.png">
+			</div>
+			<div class="reel-container">
+				<div class="reel">
+					<img src="imagen44.png" alt="Imagen 1">
+					<img src="imagen75.png" alt="Imagen 2">
+				</div>
+			</div>
+			<script>
+			const reelContainer = document.querySelector('.reel-container');
+			const reel = document.querySelector('.reel');
+			const images = document.querySelectorAll('.reel img');
+			let counter = 0;
+			const imageWidth = images[0].offsetWidth; // Ancho de una imagen
+
+			function scrollReel() {
+			counter++;
+            if (counter >= images.length) {
+                counter = 0;
+            }
+            reel.style.transform = `translateX(-${counter * imageWidth}px)`;
+			}
+
+			setInterval(scrollReel, 2000); // Cambia de imagen cada 3 segundos
+			</script>
+			<div class="titulo1">Quienes Somos</div>
+			<div class="slogan">"Tu despensa fresca y con sabor de verdad"</div>
+			<div class="texto1"><p>Desde Noviembre de 2024 abrimos con esmero y gran alegria nuestras puertas 
+			para ustedes queridos vecinos y amigos, invitandolos a su nueva tienda de abarrotes Lupita.
+			Quizas lo veas como una pequeña tienda, pero somos más que eso, somos un negocio lleno de ilusión 
+			y esperanza por llegar a sus hogares.<br>
+			Queremos convertirnos en tu primera opción para encontrar todo lo que necesitas para tu hogares
+			desde lo más básico hasta los gustos que nos alegran el día.<br>
+			
+			2024 fue solo el comienzo de tu próxima tienda de abarrotes favorita, dia a dia iremos creciendo
+			para ser parte de tu despensa siempre.</p></div>
+			<div class="imagen7">
+				<img src="imagen7.jpg">
+			</div>
+			
+			<div class="texto2">Nuestras Categorias</div>
+			<div class="flip-container">
+				<div class="flip-inner">
+					<div class="flip-front">
+						<img src="imagen9.jpg" alt="Frente">
+					</div>
+					<div class="flip-back">
+						<img src="imagen10.png" alt="Reverso">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container1">
+				<div class="flip-inner1">
+					<div class="flip-front1">
+						<img src="imagen11.jpg" alt="Frente">
+					</div>
+					<div class="flip-back1">
+						<img src="imagen14.png" alt="Reverso">
+					</div>
+				</div>
+			</div>
+			<div class="flip-container2">
+				<div class="flip-inner2">
+					<div class="flip-front2">
+						<img src="imagen13.jpg" alt="Frente">
+					</div>
+					<div class="flip-back2">
+						<img src="imagen12.png" alt="Reverso">
+					</div>
+				</div>
+			</div>
+			
+			<div class="texto3">Conoce nuestra Misión, Visión y Objetivos</div>
+			<article class="promo-2x1">
+				<div class="imagen11">
+					<img src="imagen19.jpg">
+				</div>
+				<h1>MISIÓN</h1>
+				<h2>Brindar a la comunidad productos de primera necesidad con calidad, precios 
+				accesibles y un servicio cercano y confiable, contribuyendo al bienestar de las 
+				familias locales y al desarrollo económico de nuestra localidad</h2>
+			</article>
+			<article class="promo-2">
+				<div class="imagen15">
+					<img src="imagen15.jpg">
+				</div>
+				<h1>VISIÓN</h1>
+				<h2>Ser la tienda de abarrotes preferida en la comunidad de La Esperanza, reconocida 
+				por su compromiso con el buen servicio, la calidad de sus productos y su contribución
+				al desarrollo local.</h2>
+			</article>
+			<article class="promo">
+				<div class="imagen16">
+					<img src="imagen16.jpg">
+				</div>
+				<h1>OBJETIVOS</h1>
+				<h2>-Convertirse en el principal punto de abasto para la comunidad y localidades cercanas.<br>
+				-Crear promociones para clientes frecuentes.<br>
+				-Ahorrar e invertir en la ampliación de mi negoción. 
+				</h2>
+			</article>
+			<div class="pie1">CONOCENOS<br>Localidad de La Esperanza Municipio Tianguistengo<br>Tel:7713347207<br>
+			Autoras:Alejandra Alarcón Tolentino, Wendy Alvarez Alarcón
+			</div>
+				
+	</body>
+</html>
+

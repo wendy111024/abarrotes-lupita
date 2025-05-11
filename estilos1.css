@@ -1,0 +1,168 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #70B5B8;
+  margin: 0;
+  flex-direction: column;
+}
+
+/* Botón para activar galería */
+.boton-galeria {
+  margin-top: 50px;
+  background-color: #156164;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.boton-galeria:hover {
+  background-color: #1d8080;
+}
+
+/* Redes sociales */
+.redes {
+  position: fixed;
+  left: -30px;
+  top: 200px;
+  z-index: 2000;
+}
+
+.redes ul {
+  list-style: none;
+}
+
+.redes ul li a {
+  display: inline-block;
+  color: white;
+  background: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
+
+.redes ul li .icon-youtube1 { background: #D20103; }
+.redes ul li .icon-whatsapp { background: #50BE25; }
+.redes ul li .icon-facebook1 { background: #3b5998; }
+.redes ul li .icon-instagram1 { background: #E23953; }
+
+.redes ul li a:hover {
+  padding: 10px 30px;
+  background: black;
+}
+
+/* Botón adicional */
+.boton2 li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 40px;
+  position: absolute;
+  top: 510px;
+  left: 552px;
+  font-size: 25px;
+  background: #156164;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+}
+
+/* Pie de página */
+.pie {
+  color: white;
+  position: absolute;
+  top: 555px;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  background: #278083;
+  font-style: italic;
+}
+
+/* Galería automática - oculta inicialmente */
+.auto-gallery {
+  display: none;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  margin: 30px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.gallery-track img {
+  width: 110px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-track img:hover {
+  transform: scale(1.1);
+}
+
+/* Animación desplazamiento */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Promo 2x1 */
+.promo-2x1 {
+  background: linear-gradient(135deg, #3A6364, #278083);
+  color: white;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  animation: pulse 3s infinite;
+}
+
+.promo-2x1 h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.promo-2x1 p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.promo-2x1 button {
+  background-color: #fff;
+  color: #3A6364;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.promo-2x1 button:hover {
+  background-color: grey;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
